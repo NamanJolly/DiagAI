@@ -279,8 +279,9 @@ export const NavbarButton = ({
   };
 
   return (
-    <Tag
-      href={href || undefined}
+    //@ts-ignore
+    <Tag href={href || undefined}
+    //@ts-ignore
       className={cn(baseStyles, variantStyles[variant], className)}
       {...props}
     >
