@@ -75,8 +75,8 @@ function DoctorAgentCard({ doctorAgent }: props) {
           <AddNewSession>
           <CardItem
             translateZ={20}
-            as="a"
-            href={'/dashboard'}
+            as="button"
+            
             className="px-4 cursor-pointer py-2 rounded-2xl bg-black dark:bg-white dark:text-black text-white text-xs font-bold "
           >
             Consult ➺
