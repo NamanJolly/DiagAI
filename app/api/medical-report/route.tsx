@@ -54,8 +54,10 @@ export async function POST(req:NextRequest){
                 report:JSONResp,
                 conversation:messages
             }).where(eq(SessionChatTable.sessionId,sessionId));
+            console.log(NextResponse.json(JSONResp));
             return NextResponse.json(JSONResp)
     }catch(e){
+        console.log(NextResponse.json(e));
         return NextResponse.json(e);
     }
 }
